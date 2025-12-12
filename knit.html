@@ -11,18 +11,17 @@
 	
 	<nav-ul>
 		<li style="float: left;"><a href="index.html"><img src="images/logo2.png" alt="Home"></a></li>
-		<li><a href="knit.html">Machine Knitting</a></li>
 			<div class="dropdown">
-				<button class="dropbtn">Dropdown
+				<button class="dropbtn"><img src="images/knitnav 1.png">
 					<i class="fa fa-caret-down"></i>
 				</button>
 				<div class="dropdown-content">
+					<a href="knit.html">What is a punchcard?</a>
 					<a href="punch_lace.html">Punch Lace</a>
 				</div>
 			</div>
-		<li><a href="weaving.html">Loom Weaving</a></li>
-		<li><a href="#analogue_programming">Analogue Programming</a></li>
-		<li><a href="index.html">About</a></li>
+		<li><a href="weaving.html"><img src="images/navbar_weave 1.png" alt="Loom Weaving"></a></li>
+		<li><a href="analog_programming.html"><img src="images/punchcardnav 1.png" alt="Analog Programming"></a></li>
 
 	</nav-ul>
 
@@ -31,7 +30,6 @@
 			float: left;
 			margin: 30px 15px;
 		}
-
 
 	/*vw means visible width and vh means visible height, code is from https://blog.logrocket.com/css-full-page-background/#fixed-backgrounds
 	body{ 
@@ -56,11 +54,20 @@
 <!-- review if this page is helpful for applying the page layout for the pages
  https://www.w3schools.com/html/html_layout.asp -->
 
-<body>
-	<div class="main"><img style="width: 95%;" src="images/header_knit.png"></div>
 
-<!--ABOVE is the centered navbar
-breadcrumbs here with hyperlinks-->
+
+<body>
+
+<nav aria-label="Breadcrumb" class="breadcrumb">
+	<ol>
+		<li><a href="index.html" style="color: #36553F; background-color: #F6D4BC;">Home</a></li>
+		<li><span aria-current="page">Machine Knitting</span></li>
+	</ol>
+</nav>
+
+<!--breadcrumbs code from https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Breadcrumb_navigation-->
+
+	<div class="main"><img style="width: 95%;" src="images/header_knit.png"></div>
 
 	<h1>What is a knit machine punchcard?</h1>
 	<h2>How do they help in textile design exploration?</h2>
@@ -68,17 +75,35 @@ breadcrumbs here with hyperlinks-->
 
 
 	<div class="main">
-		<div class="punchcard">
+		<div class="punchcard" style="height: 300px;">
 			<br>
-			<p style="margin: 30px;">does this text show up</p>
-		</div>
-		<div><img src="images/punchcard1.png"></div>
-		<div>
-			<p>  
-			Punchcard info to be inserted here......
+			<p style="margin: 30px;">Alongside manipulating the knitting machine manually to create textures and colour changes,
+				you can help the machine know what to do and when to do it by itself with the 
+				use of a punchcard. Depending on the technique you would like to use, whether you 
+				punch a hole or leave it unpunched informs the machine of different things, always
+				interacting with other machine functions that you set up yourself.
+			<br> Some examples of techniques that can be done with punchcard are:
+			<br> Punch lace
+			<br> Slip and Tuck
+			<br> Fair Isle Colourwork
+			<br> Knit-Weave
 			</p>
 		</div>
-		<div><img src="images/punchlace_full.svg"></div>
+		<div><img src="images/punchcard1 copy.png"></div>
+		<div class="punchcard" style="height: 300px;">
+			<p style="margin: 30px;"> Approaches to creating and designing punchcards are not monoliths per individual technique,
+				depending on which techniques you are interested in, sometimes they can be flexible. For example, The slip and 
+				tuck techniques are different in the outcome of the fabric but the punchcard itself is interchangeable, the settings of
+				the machine are what create the differences. 
+				<br> From a technical standpoint, knitting machines are different between various manufacturers, however the punchcard
+				function if your machine has it, works the same by feeding your punchcard through a slit at the top of the knitting bed 
+				and connecting the far ends of the punchcard for a continuous outcome in the fabric. Within the punchcard slit there are 
+				small pedals that recognize where holes have been punched to work with the rest of the machine settings to activate or stall
+				the correct needles as the knitting carriage passes over them.<br>
+				<br> In the context of textile production, punchcards provide a higher rate of efficiency and likelihood of accuracy 
+				when creating larger batches of fabric. However, when considering textile design exploration, it creates an interesting
+				opportunity to play with colours more easily for a certain sample, or testing a pattern/texture/overall design.
+		</div>
 	</div>
 
 <br>

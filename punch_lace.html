@@ -8,13 +8,32 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>programming textiles</title>
 	<link rel="stylesheet" href="style.css">
-	
+
+<!--original navbar code for text icons
 	<nav-ul>
 		<li><a href="knit.html">Machine Knitting</a></li>
 		<li><a href="weaving.html">Loom Weaving</a></li>
 		<li><a href="#analogue_programming">Analogue Programming</a></li>
 		<li><a href="index.html">About</a></li>
 	</nav-ul>
+-->
+
+	<nav-ul>
+		<li style="float: left;"><a href="index.html"><img src="images/logo2.png" alt="Home"></a></li>
+			<div class="dropdown">
+				<button class="dropbtn"><img src="images/knitnav 1.png">
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="knit.html">What is a punchcard?</a>
+					<a href="punch_lace.html">Punch Lace</a>
+				</div>
+			</div>
+		<li><a href="weaving.html"><img src="images/navbar_weave 1.png" alt="Loom Weaving"></a></li>
+		<li><a href="analog_programming.html"><img src="images/punchcardnav 1.png" alt="Analog Programming"></a></li>
+
+	</nav-ul>
+
 
 	<style>
 		img {
@@ -52,10 +71,19 @@
  https://www.w3schools.com/html/html_layout.asp -->
 
 <body>
-	<div class="main"><img style="width: 95%;" src="images/header_knit.png"></div>
+
+<nav aria-label="Breadcrumb" class="breadcrumb">
+	<ol>
+		<li><a href="index.html" style="color: #36553F; background-color: #F6D4BC;">Home</a></li>
+		<li><a href="knit.html" style="color: #36553F; background-color: #F6D4BC;">Machine Knitting</a></li>
+		<li><span aria-current="page">Punch Lace</span></li>
+	</ol>
+</nav>
 
 <!--ABOVE is the centered navbar
 breadcrumbs here with hyperlinks-->
+
+    <div class="main"><img style="width: 95%;" src="images/header_knit.png"></div>
 
 	<h1>Punch Lace Knitting</h1>
 	<h2>Combining thicker yarn and sewing thread for lace-like fabric.</h2>
@@ -63,12 +91,12 @@ breadcrumbs here with hyperlinks-->
 	<div class="main">
 		
 		<div><img src="images/punchcard1.png"></div>
-		<div>
-			<p>  
+		<div> 
 			Punchcard info to be inserted here......
-			</p>
+            <br>
+            <img src="images/punchlace_full.svg">
+
 		</div>
-		<div><img src="images/punchlace_full.svg"></div>
 	</div>
 
 <br>

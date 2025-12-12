@@ -8,17 +8,38 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>programming textiles</title>
 	<link rel="stylesheet" href="style.css">
+	
+		<nav-ul>
+		<li style="float: left;"><a href="index.html"><img src="images/logo2.png" alt="Home"></a></li>
+			<div class="dropdown">
+				<button class="dropbtn"><img src="images/knitnav 1.png">
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="knit.html">What is a punchcard?</a>
+					<a href="punch_lace.html">Punch Lace</a>
+				</div>
+			</div>
+		<li><a href="weaving.html"><img src="images/navbar_weave 1.png" alt="Loom Weaving"></a></li>
+		<li><a href="analog_programming.html"><img src="images/punchcardnav 1.png" alt="Analog Programming"></a></li>
+
+	</nav-ul>
+	
+<!--ABOVE is the centered navbar
+this is the original, with text and without images:
+<ul>
+	<li><a href="knit.html">Machine Knitting</a></li>
+	<li><a href="weaving.html">Loom Weaving</a></li>
+	<li><a href="#analogue_programming">Analogue Programming</a></li>
+	<li><a href="index.html">About</a></li>
+</ul>-->
+	
 	<style>
 		img {
 			float: left;
 			margin: 30px 15px 15px 30px;
 		}
 		
-		.rectangle {
-		width: 600px;
-		height: 100px;
-		background-color: #36553F;
-	}
 
 	/*vw means visible width and vh means visible height, code is from https://blog.logrocket.com/css-full-page-background/#fixed-backgrounds*/
 
@@ -37,36 +58,41 @@
 
 <body>
 
-<nav-ul>
-	<li><a href="knit.html"> <img src="images/knit_texture.png" alt="Machine Knitting"></a></li>
-	<li><a href="weaving.html"> <img src="images/weave_texture.png" alt="Loom Weaving"></a></li>
-	<li><a href="analog_programming.html"> <img src="images/punchcard1.png" alt="Analogue Programming"></a></li>
-	<li><a href="index.html">About</a></li>
-</nav-ul>
-	
-<!--ABOVE is the centered navbar
-this is the original, with text and without images:
-<ul>
-	<li><a href="knit.html">Machine Knitting</a></li>
-	<li><a href="weaving.html">Loom Weaving</a></li>
-	<li><a href="#analogue_programming">Analogue Programming</a></li>
-	<li><a href="index.html">About</a></li>
-</ul>
-breadcrumbs here with hyperlinks-->
+<!--breadcrumbs here with hyperlinks-->
+<nav aria-label="Breadcrumb" class="breadcrumb">
+	<ol>
+		<li><a href="index.html" style="color: #36553F; background-color: #F6D4BC;">Home</a></li>
+		<li><span aria-current="page">Analog Programming</span></li>
+	</ol>
+</nav>
 
-<div class="parallelogram"></div>
+	<h1>Historical Influence of the Punchcard</h1>
+	<h2>Looking into the correlation between textile production and technological advancement.</h2>
 
-	<h1>Analog Programming</h1>
-	<h2>Subheading</h2>
+<div class="main">
+	<div class="punchcard">
+		<br>
+		<p style="margin: 30px;">What started with the automatization of loom weaving with the Jacquard loom and 
+				its' operative punchcards to inform of treadle changes, the punchcard system has 
+				moved towards popular use in machine knitting, while project drafting for weaving bears
+				resemblance to the binary system used in early computation.
+	</div>
+	<div class="punchcard">
+		<img src="images/jacquard2.jpeg" style="object-fit: contain; height: 80%; width: 90%;">
+		<p style="font-size: 0.8rem; margin: 40px;">Image credit: 'Visite de l'usine de dentelles de Calais' by Gerald Villena, Adobe Stock
+	</div>
+	<div class="punchcard">
+		<br>
+		<img src="images/jacquard1.jpeg" style="object-fit: contain; height: 70%; width: 90%;">
+		<p style="font-size: 0.8rem; margin: 40px;">Image credit: 'Old jacquard machine, looms for jacquard weaves, enabling to manufacture complex patterns and outstanding linen damasks. Jacquard loom punch card. The revolutionary Vincenzi looms.' by Anna, Adobe Stock
+	</div>
+	<div class="punchcard">
+		<br>
+		<p style="margin: 30px;">While the mechanization of craft propelled 
+	</div>
+</div>
 
-	<img src="images/punchcards.jpeg"
-	>	
-<p>
-	To approach fair isle in punchcards, you always need to think in pairs of two. 
-	Two rows at a time per colour, going in directly after to fill in the remaining
-	stitches with your second colour. .....
-</p>
-<br>
+
 <!-- THIS IS THE COLUMN ATTEMPT- WHICH WORKS NOW BUT I DONT THINK IS NEEDED
 	<div class="row">
 		<div class="column" style="background-color:#EEE4DA">
@@ -82,25 +108,28 @@ breadcrumbs here with hyperlinks-->
 	-->
 
 
-</body>
 
-<footer>
-	<div class="rectangle"></div>
 
-	<h3 id="about">About</h3>
-	<div class="row">
-		<div class="column">
-			About this site
-			Contribute
-			FAQ
-		</div>
-		<div class="column">
-			Machine Knitting
-			Loom Weaving <div><a href="weaving.html" target="_blank"></a></div>
-			Analog Programming
-		</div>
-	</div>
+<footer class="rectangle">
+
+	<table style="width: 100%; table-layout: fixed;">
+		<colgroup>
+			<col style="width: 50%;">
+			<col style="width: 50%;">
+		</colgroup>
+		<tr>
+			<td><a style="padding: 5px;" href="index.html">About this site</a></td>
+			<td><a style="padding: 5px;" href="analog_programming.html">Analog Programming</a></td>
+		</tr>
+		<tr>
+			<td><a style="padding: 5px;" href="knit.html">Machine Knitting</a></td>
+			<td><a style="padding: 5px;" href="weaving.html">Loom Weaving</a></td>
+		</tr>
+	</table>
+
 </footer>
+
+</body>
 
 </html>
 

@@ -8,67 +8,68 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>programming textiles</title>
 	<link rel="stylesheet" href="style.css"/>
+
+		<nav-ul>
+		<li style="float: left;"><a href="index.html"><img src="images/logo2.png" alt="Home"></a></li>
+			<div class="dropdown">
+				<button class="dropbtn"><img src="images/knitnav 1.png">
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="knit.html">What is a punchcard?</a>
+					<a href="punch_lace.html">Punch Lace</a>
+				</div>
+			</div>
+		<li><a href="weaving.html"><img src="images/navbar_weave 1.png" alt="Loom Weaving"></a></li>
+		<li><a href="analog_programming.html"><img src="images/punchcardnav 1.png" alt="Analog Programming"></a></li>
+
+	</nav-ul>
+
 </head>
 <!-- this is how you write a comment describing your code in HTML. the body section is for all content that is visible. Keep it here! Semantic structure is just as important as syntax. -->
 
 
 <body>
-<nav-ul>
-	<li><a href="knit.html"> <img src="images/knit_texture.png" alt="Machine Knitting"></a></li>
-	<li><a href="weaving.html"> <img src="images/navbar_weave.png" alt="Loom Weaving"></a></li>
-	<li><a href="analog_programming.html"> <img src="images/punchcard1.png" alt="Analogue Programming"></a></li>
-	<li><a href="index.html">About</a></li>
-</nav-ul>
 
-	<h1>Weaving and knitting - industrial progression and computation</h1>
-	<div class="row">
-		<div class="column" style="background-color: #EEE4DA;">
-			<h2>What is a punchcard?</h2>
-				<p>What started with the automatization of loom weaving with the Jacquard loom and 
-				its' operative punchcards to inform of treadle changes, the punchcard system has 
-				moved towards popular use in machine knitting, while project drafting for weaving bears
-				resemblance to the binary system used in early computation.
-				Alongside manipulating the knitting machine manually to create textures and colour changes,
-				you can help the machine know what to do and when to do it by itself with the 
-				use of a punchcard. Depending on the technique you would like to use, whether you 
-				punch a hole or leave it unpunched informs the machine of different things, always
-				interacting with other machine functions that you set up yourself.</p>
+
+	<h1>Programming Textiles</h1>
+	<h2>Technical database and exploration</h2>
+
+	<div class="main">
+		<img src="images/knit_sample5.png">
+		<img src="images/inlay.png">
+		<div>
+			<h2>How can you use this website?</h2>
+			<p>First and foremost, this website is intended as a database for technical knowledge 
+				to encourage and support craft education from home. Focusing on understanding the design 
+				approaches to pattern drafts and punchcards for loom weaving and machine knitting, you can 
+				find a variety of techniques within their respective categories in the navigation bar. 
+				On the side, an exploration into the historical links of textile production and early computation
+				as a result of the invention of punchcards can also be found under 'Analog Programming'.
+			</p>
 		</div>
-		<div class="column" style="background-color: #EEE4DA;">
-			<h2>How do pattern drafts work?</h2>
-				<p>Understanding the components that are required for a functional loom
-				is the first step to being able to read and design pattern drafts. 
-				It is setup up as a mimic to the loom, the warp threads come from the 
-				topright in front of you, the treadle tie up that you are operating </p>
+		<div>
+			<h2>Testing new techniques</h2>
+				<p>A key component to learning a new technique is learning to implement it independently
+					from theory. Under the weaving and knitting sections you will be able to find interactive
+					pages to create your own designs with no ties to creating an actual piece/sample before feeling confident in the technique.
+				</p>
+		</div>
+		<div>
+			<h2>Further reading and tools</h2>
+			<p>
+				Project drafting:
+				<br> Weaving - Treadl https://treadl.com/
+				<br> Knitting - Stitch Fiddle https://www.stitchfiddle.com/en <br>
+
+				<br> Books:
+				<br>Galloway, Alexander. Uncomputable. Verso Books, 2 Nov. 2021, pp. 61–103.
+				<br>Federici, Silvia. Caliban and the Witch: Women, the Body and Primitive Accumulation. New York, Autonomedia, Apr. 2004, pp. 61–131.
+			</p>
 		</div>
 	</div>
-	
-	
-
-		<div><a href="about.html">About</a></div>
-		<img src="images/knit_texture.png">
-	<li><h1><a href="#draft"How do pattern drafts work?></a></h1></li>
-
-	<!-- below is practicing anchor links and good for table of contents. Review because not sure what div means and how this is shown when on the actual site-->
-	<section>
-		<div>
-			<h3 id="draft">How do pattern drafts work?</h3>
-		</div>
-	</section>
-
-</body>
-
-<body>
 
 
-	<!-- I am testing creating a comment, trying to write out my own header below -->
-	<h1>Loom Weaving</h1>
-	<h2>How do pattern drafts work?</h2>
-	<img src="images/weave_texture.png">
-		<p>Understanding the components that are required for a functional loom
-			is the first step to being able to read and design pattern drafts. 
-		It is setup up as a mimic to the loom, the warp threads come from the 
-		topright in front of you, the treadle tie up that you are operating </p>
 
 	<!-- For when I create my interactive section I think this piece of code will be helpful.
 	 ** is actually for redirecting the user to another page when they click within the bounds of a 
@@ -86,6 +87,26 @@
 </map>
 		From: https://www.w3schools.com/tags/tag_area.asp 
 		Should be supported by all browsers! -->
+
+<footer class="rectangle">
+
+	<table style="width: 100%; table-layout: fixed;">
+		<colgroup>
+			<col style="width: 50%;">
+			<col style="width: 50%;">
+		</colgroup>
+		<tr>
+			<td><a style="padding: 5px;" href="index.html">About this site</a></td>
+			<td><a style="padding: 5px;" href="analog_programming.html">Analog Programming</a></td>
+		</tr>
+		<tr>
+			<td><a style="padding: 5px;" href="knit.html">Machine Knitting</a></td>
+			<td><a style="padding: 5px;" href="weaving.html">Loom Weaving</a></td>
+		</tr>
+	</table>
+
+</footer>
+
 </body>
 
 </html>

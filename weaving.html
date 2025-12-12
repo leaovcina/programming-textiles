@@ -8,6 +8,24 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>programming textiles</title>
 	<link rel="stylesheet" href="style.css">
+
+	<nav-ul>
+		<li style="float: left;"><a href="index.html"><img src="images/logo2.png" alt="Home"></a></li>
+			<div class="dropdown">
+				<button class="dropbtn"><img src="images/knitnav 1.png">
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="knit.html">What is a punchcard?</a>
+					<a href="punch_lace.html">Punch Lace</a>
+				</div>
+			</div>
+		<li><a href="weaving.html"><img src="images/navbar_weave 1.png" alt="Loom Weaving"></a></li>
+		<li><a href="analog_programming.html"><img src="images/punchcardnav 1.png" alt="Analog Programming"></a></li>
+
+	</nav-ul>
+	
+
 </head>
 
 <!-- to make an image the background (IN THE CSS FILE) to the html code use this: 
@@ -21,18 +39,57 @@
 
 <body>
 
-<nav-ul>
-	<li><a href="knit.html"> <img src="images/knit_texture.png" alt="Machine Knitting"></a></li>
-	<li><a href="weaving.html"> <img src="images/weave_texture.png" alt="Loom Weaving"></a></li>
-	<li><a href="analog_programming.html"> <img src="images/punchcard1.png" alt="Analogue Programming"></a></li>
-	<li><a href="index.html">About</a></li>
-</nav-ul>
-	
+<nav aria-label="Breadcrumb" class="breadcrumb">
+	<ol>
+		<li><a href="index.html" style="color: #36553F; background-color: #F6D4BC;">Home</a></li>
+		<li><span aria-current="page">Loom Weaving</span></li>
+	</ol>
+</nav>
+
 <!--ABOVE is the centered navbar
 breadcrumbs here with hyperlinks-->
+
+	<div class="main"><img style="width: 95%;" src="images/header_weave.png"></div>
+
 	<h1>Pattern Drafts</h1>
 	<h2>Understanding fundamentals of reading and designing a pattern draft for loom weaving.</h2>
 	
+<div class="main">
+	<img src="images/waffle_draft.png">
+	<div>
+		Similarly to how punchcards inform a knitting machine of how to control the needles, pattern 
+		drafts for weaving provide a clear visualisation of what warp threads are being lifted and how 
+		they will intersect with the weft yarn. Regardless if you are using a manual loom or a digital/punchcard-based 
+		one such as a Jacquard, it defines what happens at each step and a sketch of what your resulting fabric 
+		will look like. The diagram below, illustrates the relationship between the four sections that comprise a 
+		pattern draft graph. <br>
+		<br>Threading: This is showing the pattern that the warp is set up in through the 'headles' and 'harnesses'
+		in the middle section of the loom. Each row signifies a harness and a square/cell is 1 headle. Once you
+		start weaving this cannot be changed anymore.
+		<br>Tie-up: This is relevant for floor looms, table looms use different harness mechanisms where
+		no tie-up is needed. Below the main section of the loom that holds the harnesses, the 'lams' (wooden bars underneath the harnesses)
+		need to be attached to the floor treadles. This section is read by the column, from left to right,
+		within which the cells will connect the information in the threading and the treadling pattern to
+		dictate which harnesses are being lifted by each treadle. The tie-up can be changed at any point
+		during weaving.
+		<br>Treadling pattern: The treadling sequence provides the weaver the most flexibility and creativity
+		once the loom has been set-up. Experimenting with the relationship of the tie-up and sequence 
+		can create varieties of patterns and fabric densities or intricacies.
+		<br>Resulting fabric: Following the filled-in cells of the prior 3 sections, the grid design of the final fabric
+		can be sketched out - or otherwise automatically filled in if using a digital design tool, such as Treadl.com for the design on the left.
+		<img src="images/draft_expl.png">
+	</div>
+	<img src="images/waffle.png"; style="height: 400px; transform: rotate('90deg');">
+	<br>
+	<div>
+		This is a fabric sample of the pattern draft above. You can see how the diamond forms in the draft translate
+		to the actual weaving. This specific technique is called waffle weave, the visual effect and malleability 
+		that the diamond structurecreates comes as a result of a range of short->long warp and weft floats. In the 
+		pattern draft, the long horizontal stripes (weft) and vertical stripes (warp) show the floats, which are otherwise
+		typically something to avoid to prevent instability of the fabric or them catching on your surroundings.
+	</div>
+</div>
+<!--
 	<div class="row">
 		<div class="column" style="background-color:#EEE4DA">
 			<img src="images/patterndraft1.png">
@@ -43,7 +100,7 @@ breadcrumbs here with hyperlinks-->
 			<p>Info about the punchcard example.</p>
 		</div>
 	</div>
-	
+	-->
 <footer class="rectangle">
 
 	<table style="width: 100%; table-layout: fixed;">
