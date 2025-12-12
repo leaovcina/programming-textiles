@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>programming textiles</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		img {
+			float: left;
+			margin: 30px 15px 15px 30px;
+		}
+		
+		.rectangle {
+		width: 600px;
+		height: 100px;
+		background-color: #36553F;
+	}
+
+	/*vw means visible width and vh means visible height, code is from https://blog.logrocket.com/css-full-page-background/#fixed-backgrounds*/
+
+	</style>
+	<!--For the image float code from here https://www.w3schools.com/Css/tryit.asp?filename=trycss_float2-->
+</head>
+
+<!-- to make an image the background (IN THE CSS FILE) to the html code use this: 
+ background-image : url('../images/github.png');
+	this instance for when the style.css file is in its' own folder within the broad (asset) project repository
+	the ../ (instead of a ./) gives you access to the grandparent (overarching) folder and not just the one that the image 
+		file is within (ie. ../ gives access to programming-textiles and ./ would be images)-->
+    
+<!-- review if this page is helpful for applying the page layout for the pages
+ https://www.w3schools.com/html/html_layout.asp -->
+
+<body>
+
+<nav-ul>
+	<li><a href="knit.html"> <img src="images/knit_texture.png" alt="Machine Knitting"></a></li>
+	<li><a href="weaving.html"> <img src="images/weave_texture.png" alt="Loom Weaving"></a></li>
+	<li><a href="analog_programming.html"> <img src="images/punchcard1.png" alt="Analogue Programming"></a></li>
+	<li><a href="index.html">About</a></li>
+</nav-ul>
+	
+<!--ABOVE is the centered navbar
+this is the original, with text and without images:
+<ul>
+	<li><a href="knit.html">Machine Knitting</a></li>
+	<li><a href="weaving.html">Loom Weaving</a></li>
+	<li><a href="#analogue_programming">Analogue Programming</a></li>
+	<li><a href="index.html">About</a></li>
+</ul>
+breadcrumbs here with hyperlinks-->
+
+<div class="parallelogram"></div>
+
+	<h1>Analog Programming</h1>
+	<h2>Subheading</h2>
+
+	<img src="images/punchcards.jpeg"
+	>	
+<p>
+	To approach fair isle in punchcards, you always need to think in pairs of two. 
+	Two rows at a time per colour, going in directly after to fill in the remaining
+	stitches with your second colour. .....
+</p>
+<br>
+<!-- THIS IS THE COLUMN ATTEMPT- WHICH WORKS NOW BUT I DONT THINK IS NEEDED
+	<div class="row">
+		<div class="column" style="background-color:#EEE4DA">
+			<img src="images/punchcard1.png"
+			width="300">
+			
+		</div>
+		<div class="column" style="background-color:#EEE4DA">
+			<h2>Technical application and use</h2>
+			<p>Info about the punchcard example.</p>
+		</div>
+	</div>
+	-->
+
+
+</body>
+
+<footer>
+	<div class="rectangle"></div>
+
+	<h3 id="about">About</h3>
+	<div class="row">
+		<div class="column">
+			About this site
+			Contribute
+			FAQ
+		</div>
+		<div class="column">
+			Machine Knitting
+			Loom Weaving <div><a href="weaving.html" target="_blank"></a></div>
+			Analog Programming
+		</div>
+	</div>
+</footer>
+
+</html>
+
+
+<!-- in CSS to change colours when going over the button possibly works:
+ button, .buttontext {color;}
+ button.hover, buttontext {color;}
+ - from Evan in class - his website-->

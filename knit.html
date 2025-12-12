@@ -8,6 +8,43 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>programming textiles</title>
 	<link rel="stylesheet" href="style.css">
+	
+	<nav-ul>
+		<li style="float: left;"><a href="index.html"><img src="images/logo2.png" alt="Home"></a></li>
+		<li><a href="knit.html">Machine Knitting</a></li>
+			<div class="dropdown">
+				<button class="dropbtn">Dropdown
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="punch_lace.html">Punch Lace</a>
+				</div>
+			</div>
+		<li><a href="weaving.html">Loom Weaving</a></li>
+		<li><a href="#analogue_programming">Analogue Programming</a></li>
+		<li><a href="index.html">About</a></li>
+
+	</nav-ul>
+
+	<style>
+		img {
+			float: left;
+			margin: 30px 15px;
+		}
+
+
+	/*vw means visible width and vh means visible height, code is from https://blog.logrocket.com/css-full-page-background/#fixed-backgrounds
+	body{ 
+			width: 80vw;
+			height: 100vh;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			background: url(images/desktop_background_knit.svg)
+		} 
+		*/
+	</style>
+	<!--For the image float code from here https://www.w3schools.com/Css/tryit.asp?filename=trycss_float2-->
 </head>
 
 <!-- to make an image the background (IN THE CSS FILE) to the html code use this: 
@@ -20,19 +57,70 @@
  https://www.w3schools.com/html/html_layout.asp -->
 
 <body>
-	<!--breadcrumbs here with hyperlinks-->
-	<h1>Tuck and Slip Stitches</h1>
-	<h2>Subheading</h2>
-	
+	<div class="main"><img style="width: 95%;" src="images/header_knit.png"></div>
+
+<!--ABOVE is the centered navbar
+breadcrumbs here with hyperlinks-->
+
+	<h1>What is a knit machine punchcard?</h1>
+	<h2>How do they help in textile design exploration?</h2>
+
+
+
+	<div class="main">
+		<div class="punchcard">
+			<br>
+			<p style="margin: 30px;">does this text show up</p>
+		</div>
+		<div><img src="images/punchcard1.png"></div>
+		<div>
+			<p>  
+			Punchcard info to be inserted here......
+			</p>
+		</div>
+		<div><img src="images/punchlace_full.svg"></div>
+	</div>
+
+<br>
+
+
+
+<!-- THIS IS THE COLUMN ATTEMPT- WHICH WORKS NOW BUT I DONT THINK IS NEEDED
 	<div class="row">
 		<div class="column" style="background-color:#EEE4DA">
-			<img src="images/punchcard1.png">
+			<img src="images/punchcard1.png"
+			width="300">
+			
 		</div>
 		<div class="column" style="background-color:#EEE4DA">
 			<h2>Technical application and use</h2>
 			<p>Info about the punchcard example.</p>
 		</div>
 	</div>
+	-->
+	
+
+<br>
+
+<footer class="rectangle">
+
+	<table style="width: 100%; table-layout: fixed;">
+		<colgroup>
+			<col style="width: 50%;">
+			<col style="width: 50%;">
+		</colgroup>
+		<tr>
+			<td><a style="padding: 5px;" href="index.html">About this site</a></td>
+			<td><a style="padding: 5px;" href="analog_programming.html">Analog Programming</a></td>
+		</tr>
+		<tr>
+			<td><a style="padding: 5px;" href="knit.html">Machine Knitting</a></td>
+			<td><a style="padding: 5px;" href="weaving.html">Loom Weaving</a></td>
+		</tr>
+	</table>
+
+</footer>
+
 </body>
 
 </html>
