@@ -89,6 +89,78 @@ flex-wrap: wrap;
 		background-color: #496752;
 	}
 
+/*interactive punchcard*/
+        /*below from https://www.cssportal.com/css-pattern-generator/*/
+.dot-grid {
+	background-image: radial-gradient(#EFB387 9px, transparent 9px);
+	background-size: 28px 28px;
+	background-color: #EEE4DA;
+}
+
+        /*for the CSS grid: https://www.digittrix.com/scripts/how-to-build-responsive-grid-layouts-with-css-grid*/
+.layout{
+    display: grid;
+    grid-template-areas: 
+    "main punchcard";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 40px;
+}
+
+@media (max-width: 768px) {
+    .layout{
+        grid-template-areas: 
+        "header"
+        "main"
+        "layout"
+        "footer";
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/**/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10,28px);
+    grid-gap: 15px;
+    padding: 40px 30px;
+}
+
+.dot {
+    width: 28px;
+    height: 28px;
+    background-color: #EFB387;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+        /*making list items unselectable*/
+    -webkit-user-select: none;
+    -mox-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-width: 600px){
+    .dot{
+        width: 15px;
+        height: 15px;
+    }
+    .grid{
+        grid-gap: 5px;
+        grid-template-columns: repeat(6,28px);
+        padding: 40px 40px 40px 50px;
+    }
+}
+
+.dot-active{
+    background-color: #496752;
+}
+
 /*.punchcard {
   mask: radial-gradient(40px at 40px 40px,#0000 98%,#000) -40px -40px;
   height: 100vh;
@@ -164,8 +236,62 @@ body {
 		}
 */
 
+/*checklist - for interactive punchcards below. from here https://www.w3schools.com/howto/howto_js_todolist.asp*/
+ul {
+    margin: 0;
+    padding: 0;
+}
 
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #36543e;
+    color: #EEE4DA;
+    font-size: 18px;
+    transition: 0.2s;
 
+    /*making list items unselectable*/
+    -webkit-user-select: none;
+    -mox-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:hover {
+  background: #192c1f;
+}
+
+ul li.checked {
+    background: #192c1f;
+    color:#EEE4DA;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #EEE4DA;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top:10px;
+    left:16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.listheading {
+    background-color: #192c1f;
+    padding: 30px 40px;
+    color: #EEE4DA;
+    text-align: center;
+}
+
+.listheading:after{
+    content:"";
+    display: table;
+    clear: both;
+}
 
 /*below is css for nav bar - flexbox and center align. from https://www.w3schools.com/css/css_navbar_horizontal.asp*/
 

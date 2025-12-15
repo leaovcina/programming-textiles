@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>programming textiles</title>
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		body{
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background: #496752;
+			margin: 0;
+		}
+	</style>
+
+
+</head>
+
+<body>
+<div class="main" style="width: 40vw;">
+	<div class="rectangle" style="background-color: #EEE4DA;">
+		<p>
+			<a href="punch_lace.html">
+			<img style="width: 95%;" src="images/interactive_punch_header.png">
+			</a>
+		</p>
+	</div>
+
+	<div id="myDIV" class="listheading">
+		<h2 style="color: #EEE4DA;">Design Testing</h2>
+		<p style="color: #EEE4DA;">Technique to Try: Punch Lace. Keep these in mind:</p>
+
+		<ul id="myUL">
+			<li>Avoid floats: Width of punched hole (eyelets) areas.</li>
+			<li>How will thread and yarn interact? Dominant versus background.</li>
+			<li>Continuity of pattern - all 4 sides.</li>
+		</ul>
+	</div>
+
+<script>
+	var list=document.querySelector('ul');
+	list.addEventListener('click', function(ev){
+		if (ev.target.tagName === 'LI') {
+			ev.target.classList.toggle('checked');
+		}
+	}, false);
+</script>
+
+</div>
+
+
+<div class="punchcard" style="background-color: #EEE4DA; border: none; height: fit-content; width: fit-content;">
+	<div class="grid" onclick="activedot()" >
+
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+	</div>
+</div>
+
+
+    <script>
+        function activedot (){
+    document.querySelectorAll('.dot').forEach(function(div) {
+    div.addEventListener('click', function() {
+        if (div.style.backgroundColor = '#EFB387') {
+        div.style.backgroundColor = '#496752';
+        } else {
+        div.style.backgroundColor = '#EFB387';
+        }
+    });
+    });
+}
+
+</script>
+	
+</body>
+
+</html>
